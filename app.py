@@ -5,7 +5,7 @@ import time
 app = Flask(__name__)
 client = Client()
 
-@app.route('/decompile', methods=['POST'])
+@app.route('/api', methods=['POST'])
 def fix_script():
     # Extract the script from the POST request
     data = request.get_json(force=True)
